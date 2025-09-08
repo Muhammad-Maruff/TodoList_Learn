@@ -1,45 +1,53 @@
 "use client";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import * as HiIcons from "react-icons/hi2";
+import Link from "next/link";
+import 
+{   
+    HiOutlineClipboardDocumentList, 
+    HiOutlineCog6Tooth, 
+    HiOutlinePhone, 
+    HiOutlineQuestionMarkCircle, 
+    HiOutlineSquares2X2, 
+    HiOutlineUser 
+}  from "react-icons/hi2";
 
 const menuItems = [
         {
-            icon: <HiIcons.HiOutlineSquares2X2 className="w-5 h-5"/>,
+            icon: <HiOutlineSquares2X2 className="w-5 h-5"/>,
             label: "Dashboard",
             path: "/dashboard",
         },
 
         {
-            icon: <HiIcons.HiOutlineClipboardDocumentList className="w-5 h-5"/>,
+            icon: <HiOutlineClipboardDocumentList className="w-5 h-5"/>,
             label: "TodoList",
-            path: "/todolist",
+            path: "/todos",
         },
 
         {
-            icon: <HiIcons.HiOutlineUser className="w-5 h-5"/>,
+            icon: <HiOutlineUser className="w-5 h-5"/>,
             label: "User",
-            path: "/user",
+            path: "/users",
         },
 
         {
-            icon: <HiIcons.HiOutlineCog6Tooth className="w-5 h-5"/>,
-            label: "Pengaturan",
-            path: "/pengaturan",
+            icon: <HiOutlineCog6Tooth className="w-5 h-5"/>,
+            label: "Setting",
+            path: "/settings",
         },
     ];
 
     const helpItems = [
         {
-            icon: <HiIcons.HiOutlineQuestionMarkCircle className="w-5 h-5"/>,
-            label: "Bantuan",
-            path: "/bantuan"
+            icon: <HiOutlineQuestionMarkCircle className="w-5 h-5"/>,
+            label: "Help",
+            path: "/help"
         },
         
         {
-            icon: <HiIcons.HiOutlinePhone className="w-5 h-5"/>,
-            label: "Hubungi Kami",
-            path: "/hubungi",
+            icon: <HiOutlinePhone className="w-5 h-5"/>,
+            label: "Contact",
+            path: "/contact",
         },
     ];
 
@@ -51,8 +59,8 @@ export default function Sidebar()
         <aside className="bg-primary-light w-72 min-h-screen border border-gray-200">
 
            <div className="flex p-4 items-center gap-4">
-                <div className="bg-primary text-primary-light w-14 h-14 rounded-md flex items-center justify-center">
-                    <HiIcons.HiOutlineClipboardDocumentList className="w-8 h-8"/>
+                <div className="bg-primary text-primary-light w-12 h-12 rounded-md flex items-center justify-center">
+                    <HiOutlineClipboardDocumentList className="w-6 h-6"/>
                 </div>
                 <h1 className="font-bold text-xl">Todo List</h1>
            </div>

@@ -1,6 +1,7 @@
+import Sidebar from "@/components/layout/Sidebar";
+import Navbar from "@/components/layout/Navbar";
 import { Noto_Sans } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/layout/Sidebar";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <div className="flex">
           <Sidebar />
           <div className="flex-1">
+            <Navbar />
           {children}
           </div>
         </div>
