@@ -17,7 +17,7 @@ export default function Navbar ({onMenuClick}) {
                 <button onClick={onMenuClick} className="p-1 mr-2 text-gray-600 hover:text-gray-900 lg:hidden" aria-label="Toggle Menu">
                     <HiOutlineBars3 className="w-6 h-6"/>
                 </button>
-                <h1 className="font-medium text-xl">{pageTitle}</h1>
+                <h1 className="font-medium text-xl text-gray-900">{pageTitle}</h1>
             </div>
 
             <div className="flex items-center gap-4 text-gray-500">

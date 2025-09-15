@@ -62,7 +62,7 @@ export default function Sidebar()
                 <div className="bg-primary text-primary-light w-12 h-12 rounded-md flex items-center justify-center">
                     <HiOutlineClipboardDocumentList className="w-6 h-6"/>
                 </div>
-                <h1 className="font-bold text-xl">Todo List</h1>
+                <h1 className="font-bold text-xl text-gray-900">Todo List</h1>
            </div>
 
            <nav className="flex-1 px-4 py-6 border-t">
