@@ -112,8 +112,8 @@ export default function TodosPage() {
 
             {showForm && (
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                    <h2 className="text-lg font-medium mb-4">
-                        {editingTodo ? "Edit Todo" : "Tambah Todo Baru"}
+                    <h2 className="text-lg font-medium mb-4 text-gray-900">
+                        {editingTodo ? "Update Todo" : "Tambah Todo Baru"}
                     </h2>
                     <TodoForm todo={editingTodo} onSubmit={editingTodo ? updateTodo : addTodo } onCancel={handleCancel}/>
                 </div>

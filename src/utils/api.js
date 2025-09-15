@@ -33,12 +33,12 @@ export const todoApi = {
   },
 
   update: async (id, todoData) => {
-    const response = await api.put(`todos/${id}`, todoData);
+    const response = await api.put(`/todos/${id}`, todoData);
     return response.data;
   },
 
   delete: async (id) => {
-    const response = await api.delete(`todos/${id}`);
+    const response = await api.delete(`/todos/${id}`);
     return response.data;
   },
   
